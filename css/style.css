@@ -1,0 +1,203 @@
+:root{
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: white;
+}
+
+.principal__imagen{
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.principal img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.imagen--1{
+    display: block;
+}
+
+.imagen--2{
+    display: none;
+}
+
+
+@media (min-width: 440px) { 
+    .imagen--1{
+        display: none;
+    }
+
+    .imagen--2{
+        display: block;
+    }
+    .principal{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 55%;
+        border-radius: 1.5rem;
+        background-color: white;
+    }
+
+    .principal__imagen{
+        width: 50%;
+        border-radius: 1.5rem;
+    }
+
+    .principal img{
+        border-radius: 1.5rem;
+    }
+}
+
+.principal__texto{
+    height: 100%;
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@media (min-width: 440px) { 
+    .principal__texto{
+        height: 100%;
+        width: 40%;
+        padding-left: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+.texto__titulo h1{
+    font-size: 3.2rem ;
+    font-weight: 700;
+    font-family: 'Fraunces', sans-serif;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 440px) { 
+    .texto__titulo h1{
+        font-size: 4rem ;
+    }
+}
+
+.texto__titulo{
+    height: auto;
+    width: 90%;
+}
+
+.principal__texto h4{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    color: var(--DarkGrayishBlue);
+    letter-spacing: 1rem;
+}
+
+@media (min-width: 440px) { 
+    .principal__texto h4{
+        margin: 0;
+    }
+}
+
+.texto__parrafo{
+    height: auto;
+    width: 90%;
+}
+
+.texto__parrafo p{
+    color: var(--DarkGrayishBlue);
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 500;
+}
+
+@media (min-width: 440px) { 
+    .texto__parrafo p{
+        color: var(--DarkGrayishBlue);
+        line-height: 1.7;
+        margin: 0;
+    }
+}
+
+.texto__precio{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.texto__precio h2{
+    color: var(--DarkCyan);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 4rem;
+}
+
+.texto__precio p{
+    color: var(--DarkGrayishBlue);
+}
+
+.texto__boton{
+    background-color: var(--DarkCyan);
+    border-radius: 1rem;
+    height: 6rem;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.texto__boton p{
+    color: var(--White);
+    font-weight: 700;
+}
+
+.texto__boton img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.texto__boton:hover{
+    cursor: pointer;
+    background-color: hsl(136, 55%, 23%);
+}
+
+@media (min-width: 440px) { 
+    .texto__boton{
+        width: 100%;
+    }
+}
